@@ -1,16 +1,16 @@
-name: Your New Jekyll Site
+name: Seunghyun's Blog
 description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+meta_description: "Seunghyun's Blog, Blogging about stuffs"
 
 markdown: kramdown
 highlighter: pygments
 logo: false
 paginate: 15
 baseurl: /
-domain_name: 'http://yourblog-domain.com'
+domain_name: 'https://seunghyun-lee.github.io/'
 google_analytics: 'UA-XXXXXXXX-X'
 gems: [jekyll-paginate]
 
 # Details for the RSS feed generator
-url:            'blog url'
+url:            'https://seunghyun-lee.github.io/'
 author:         'Your Name'
