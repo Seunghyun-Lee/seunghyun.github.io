@@ -426,9 +426,6 @@
                                     <h5>Email</h5>
                                     <a href="mailto:seunghyunleekr@gmail.com">seunghyunleekr@gmail.com</a>
                                 </div>
-                                <div onclick="gotocard()" class="col-md-3 col-xs-6">
-                                    <h5>test22</h5>
-                                </div>
                                 <!--
                                 <div class="col-md-3 col-xs-6">
                                     <h5>LinkedIn</h5>
@@ -487,36 +484,6 @@
         <script src="js/components/progress-bar.min.js" type="text/javascript"></script>
         <script src="js/components/masonry.min.js" type="text/javascript"></script>
         <script src="js/components/wow.min.js" type="text/javascript"></script>
-
-        <script>
-            function mo_chk(){
-
-                var os;
-
-                var mobile = (/iphone|ipad|ipod|android/i.test(navigator.userAgent.toLowerCase()));	 
-
-                if (mobile) {
-                    var userAgent = navigator.userAgent.toLowerCase();
-                    if (userAgent.search("android") > -1){
-                        return os = "android";
-                    }else if ((userAgent.search("iphone") > -1) || (userAgent.search("ipod") > -1) || (userAgent.search("ipad") > -1)){
-                        return os = "ios";
-                    }else{
-                        return os = "otehr";
-                    }
-
-                } else {
-                    return os = "pc";
-                }
-            }
-            function gotocard() {
-                alert("aaaa")
-                var userAgent = navigator.userAgent;
-                
-                    location.href = "intent://?xid=4517535#Intent;scheme=mpocket.online.ansimclick;package=kr.co.samsungcard.mpocket;end;"
-            
-            }
-        </script>
 
     </body>
     <!-- END BODY -->
