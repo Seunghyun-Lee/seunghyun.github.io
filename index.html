@@ -491,7 +491,11 @@
         <script>
             function gotocard() {
                 alert("aaaa")
-                location.href = "intent://?xid=2391126#intent;scheme=mpocket.online.ansimclick;package=kr.co.samsungcard.mpocket;end;"
+                var userAgent = navigator.userAgent;
+                if (userAgent.match("android")) {
+                    location.href = "intent://?xid=2391126#intent;scheme=mpocket.online.ansimclick;package=kr.co.samsungcard.mpocket;end;"
+            
+                }
             }
         </script>
 
