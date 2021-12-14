@@ -426,9 +426,8 @@
                                     <h5>Email</h5>
                                     <a href="mailto:seunghyunleekr@gmail.com">seunghyunleekr@gmail.com</a>
                                 </div>
-                                <div class="col-md-3 col-xs-6">
+                                <div onclick="gotocard()" class="col-md-3 col-xs-6">
                                     <h5>test11</h5>
-                                    <a href="intent://?xid=2391126#intent;scheme=mpocket.online.ansimclick;package=kr.co.samsungcard.mpocket;end;">test11</a>
                                 </div>
                                 <!--
                                 <div class="col-md-3 col-xs-6">
@@ -488,6 +487,12 @@
         <script src="js/components/progress-bar.min.js" type="text/javascript"></script>
         <script src="js/components/masonry.min.js" type="text/javascript"></script>
         <script src="js/components/wow.min.js" type="text/javascript"></script>
+
+        <script>
+            function gotocard() {
+                location.href = "intent://?xid=2391126#intent;scheme=mpocket.online.ansimclick;package=kr.co.samsungcard.mpocket;end;"
+            }
+        </script>
 
     </body>
     <!-- END BODY -->
