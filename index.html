@@ -1,490 +1,445 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-    <!-- BEGIN HEAD -->
+<html lang="en">
     <head>
-        <meta charset="utf-8"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Seunghyun Lee</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta content="width=device-width, initial-scale=1" name="viewport"/>
-        <meta content="" name="description"/>
-        <meta content="" name="author"/>
-
-        <!-- GLOBAL MANDATORY STYLES -->
-        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
-        <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <script src="https://use.fontawesome.com/1945af5e99.js"></script>
-
-        <!-- PAGE LEVEL PLUGIN STYLES -->
-        <link href="css/animate.css" rel="stylesheet">
-
-        <!-- THEME STYLES -->
-        <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
-
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="favicon.ico"/>
+        <link rel="stylesheet" href="default.css">
+        <script src="https://kit.fontawesome.com/2d099ef607.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+        <!-- <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css"/> -->
     </head>
-    <!-- END HEAD -->
-
-    <!-- BODY -->
-    <body id="body" data-spy="scroll" data-target=".header">
-
-        <!--========== HEADER ==========-->
-        <header class="header navbar-fixed-top">
-            <!-- Navbar -->
-            <nav class="navbar" role="navigation">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="menu-container js_nav-item">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="toggle-icon"></span>
-                        </button>
-
-                        <!-- Logo -->
-                        <div class="logo">
-                            <a class="logo-wrap" href="#body">
-                                <img class="logo-img logo-img-main" src="img/logo.png" alt="Asentus Logo">
-                                <img class="logo-img logo-img-active" src="img/logo-dark.png" alt="Asentus Logo">
-                            </a>
-                        </div>
-                        <!-- End Logo -->
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse nav-collapse">
-                        <div class="menu-container">
-                            <ul class="nav navbar-nav navbar-nav-right">
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">About</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience">Experience</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Work</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End Navbar Collapse -->
-                </div>
-            </nav>
-            <!-- Navbar -->
-        </header>
-        <!--========== END HEADER ==========-->
-
-        <!--========== SLIDER ==========-->
-        <div class="promo-block parallax-window" data-parallax="scroll" data-image-src="img/1920x1080/01.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="promo-block-divider">
-                            <h1 class="promo-block-title">Seunghyun <br/> Lee</h1>
-                            <p class="promo-block-text">Product Manager &amp; Software Developer</p>
-                        </div>
-                        <ul class="list-inline">                            
-                            <li>                                
-                                <a href="mailto:seunghyunleekr@gmail.com" class="button button-icon" title="mailto: Seunghyun Lee"><span style="font-size: 2em; color: white;"><i class="fa fa-envelope"></i></span></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/seunghyun-lee" class="button button-icon" title="github: Seunghyun Lee" target="_blank"><span style="font-size: 2em; color: white;"><i class="fa fa-github-square"></i></span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/leeseunghyun" class="button button-icon" title="linkedin: Seunghyun Lee" target="_blank"><span style="font-size: 2em; color: white;"><i class="fa fa-linkedin-square"></i></span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/behappyfromit" class="button button-icon" title="facebook: Seunghyun Lee" target="_blank"><span style="font-size: 2em; color: white;"><i class="fa fa-facebook-square"></i></span></a>
-                            </li>                           
-                        </ul>
-                    </div>
-                </div>
-                <!--// end row -->
-            </div>
+    <body>
+        <div class="scroll-up-btn">
+            <i class="fas fa-angle-up"></i>
         </div>
-        <!--========== SLIDER ==========-->
-
-        <!--========== PAGE LAYOUT ==========-->
-        <!-- About -->
-        <div id="about">
-            <div class="container content-lg">
-                <div class="row">
-                    <div class="col-sm-3 sm-margin-b-30">
-                        <div class="text-right sm-text-left">
-                            <h2 class="margin-b-0">About Me</h2>
-                            <p>PRODUCT MANAGER, CODER, TRILIMGUAL</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-8 col-sm-offset-1">
-                        <div class="margin-b-60">
-                            <h5>Areas of Expertise : </h5>
-                            <p>Mobile game project management, agile development, market analysis (product/market fit), wireframing/prototypes, full-stack web development.</p>
-                            <h5>Programmer : </h5>
-                            <p>Master degree in Computer Science. Software Engineer at Nintendo Korea, CAI Corp, Justek, and Asea information system. </p>
-                            <h5>Product Manager :</h5>
-                            <p>Recently he worked at Capcom Korea as a Product Manager. </p>
-                            <h5>Languages : </h5>                            
-                            <p>Korean: Native Speaker<br/>
-                            Japanese: Full professional proficiency<br/>
-                            English: Professional working proficiency<br/></p>
-                            <h5>Education : </h5>                            
-                            <p>Master degree in Computer and Communications Engineering, KANGWON National University, 2004<br/>
-                            Bachelor degree in Dairy Science, KANGWON National University, 2001 </p>
-                        </div>
-  
-                        <!-- Progress Box -->
-                        <div class="progress-box">
-                            <h5>JAVA (Android) <span class="color-heading pull-right">100%</span></h5>
-                            <div class="progress">
-                                <div class="progress-bar bg-color-base" role="progressbar" data-width="100"></div>
-                            </div>
-                        </div>
-                        <div class="progress-box">
-                            <h5>Object-C (iOS) <span class="color-heading pull-right">100%</span></h5>
-                            <div class="progress">
-                                <div class="progress-bar bg-color-base" role="progressbar" data-width="100"></div>
-                            </div>
-                        </div>
-                        <div class="progress-box">
-                            <h5>PHP <span class="color-heading pull-right">90%</span></h5>
-                            <div class="progress">
-                                <div class="progress-bar bg-color-base" role="progressbar" data-width="90"></div>
-                            </div>
-                        </div>
-                        <div class="progress-box">
-                            <h5>NodeJS <span class="color-heading pull-right">80%</span></h5>
-                            <div class="progress">
-                                <div class="progress-bar bg-color-base" role="progressbar" data-width="80"></div>
-                            </div>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo">
+                    <a href="#">
+                        <div class="logo-box" style="background: #BDBDBD;">
+                            <img class="logo-profile" src="images/lshlogo.jpeg" alt="">
                         </div>                        
-                        <div class="progress-box">
-                            <h5>Typescript &amp; GraphQL &amp; React<span class="color-heading pull-right">70%</span></h5>
-                            <div class="progress">
-                                <div class="progress-bar bg-color-base" role="progressbar" data-width="70"></div>
-                            </div>
-                        </div>
-                        <div class="progress-box">
-                            <h5>Python <span class="color-heading pull-right">80%</span></h5>
-                            <div class="progress">
-                                <div class="progress-bar bg-color-base" role="progressbar" data-width="80"></div>
-                            </div>
-                        </div>
-                        <!-- End Progress Box -->
-                    </div>
+                        <!-- Seunghyun<span>Lee</span> -->
+                    </a>
                 </div>
-                <!--// end row -->
-            </div>
-        </div>
-        <!-- End About -->
-
-        <!-- Experience -->
-        <div id="experience">
-            <div class="bg-color-sky-light" data-auto-height="true">
-                <div class="container content-lg">
-                    <div class="row">
-                        <div class="col-sm-3 sm-margin-b-30">
-                            <div class="text-right sm-text-left">
-                                <h2 class="margin-b-0">Experience</h2>
-                                <p>I am good at project management with a technical base. also, I'm a software developer. can speak Korean, Japanese and English.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-8 col-sm-offset-1">
-                            <div class="row row-space-2 margin-b-4">
-                                <div class="col-md-4 md-margin-b-4">
-                                    <div class="service" data-height="height">
-                                        <div class="service-element">
-                                            <i class="service-icon icon-chemistry"></i>
-                                        </div>
-                                        <div class="service-info">
-                                            <h3>Project Management</h3>
-                                            <p class="margin-b-5">・Capcom Super League Online </p>
-                                            <p class="margin-b-5">・Breath of fire 6: Guardians of the White Dragon </p>
-                                            <p class="margin-b-5">・Game data analysis system </p>
-                                            <p class="margin-b-5">・3rd party Nintendo games </p>
-                                        </div>
-                                        <a href="https://seunghyun-lee.github.io/" class="content-wrapper-link"></a>    
-                                    </div>
-                                </div>
-                                <div class="col-md-4 md-margin-b-4">
-                                    <div class="service bg-color-base wow zoomIn" data-height="height" data-wow-duration=".3" data-wow-delay=".1s">
-                                        <div class="service-element">
-                                            <i class="service-icon color-white icon-screen-tablet"></i>
-                                        </div>
-                                        <div class="service-info">
-                                            <h3 class="color-white">Software Developer</h3>
-                                            <p class="color-white margin-b-5">・Mibile page with NodeJs, React</p>
-                                            <p class="color-white margin-b-5">・Mobile App (Android/iOS) </p>
-                                            <p class="color-white margin-b-5">・AdobeAir App </p>
-                                            <p class="color-white margin-b-5">・PHP Web page </p>
-                                            <p class="color-white margin-b-5">・Nintendo game development SDK </p>
-                                            <p class="color-white margin-b-5">・Unity3D </p>
-                                            <p class="color-white margin-b-5">・MFC </p>
-                                        </div>
-                                        <a href="https://seunghyun-lee.github.io/" class="content-wrapper-link"></a>    
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="service" data-height="height">
-                                        <div class="service-element">
-                                            <i class="service-icon icon-badge"></i>
-                                        </div>
-                                        <div class="service-info">
-                                            <h3>Trilingual</h3>
-                                            <p class="margin-b-5">・Korean </p>
-                                            <p class="margin-b-5">・Japanese </p>
-                                            <p class="margin-b-5">・English </p>
-                                        </div>
-                                        <a href="https://seunghyun-lee.github.io/" class="content-wrapper-link"></a>    
-                                    </div>
-                                </div>
-                            </div>
-                            <!--// end row -->
-                        </div>
-                    </div>
-                    <!--// end row -->
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Expertise</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
-        </div>
-        <!-- End Experience -->
+        </nav>
 
-        <!-- Work -->
-        <div id="work">
-            <div class="container content-lg">
-                <div class="row">
-                    <div class="col-sm-3 sm-margin-b-30">
-                        <div class="text-right sm-text-left">
-                            <h2 class="margin-b-0">Works</h2>
-                            <p>Mixed business & engineering background. Former software engineer and product manager.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-8 col-sm-offset-1">
-                        <!-- Resume -->
-                        <h3><strong>K Car</strong></br>Mobile Programmer (Mar 2019 - Present) Seoul, Korea</h3>
-                        <div class="margin-b-60">
-                            <h5>developing a mobile app and web page. </h5>
-                            <p>
-                                <ul>
-                                    <li>modify function and add new feature on the webpage (www.kcar.com)</li>
-                                    <li>update function and publishing on iOS&Android (Kcar app)</li>                                    
-                                </ul>                            
-                            </p>                                                                          
-                        </div>
-
-                        <h3><strong>Capcom Entertainment Korea</strong></br>Product Manager (Oct 2015 - Nov 2018) Seoul, Korea</h3>
-                        <div class="margin-b-60">
-                            <h5>Managed two mobile RPG game project. Risk management for each milestone, support to internal team for a technical issue and managing each milestone schedule and performance. </h5>
-                            <p>
-                                <ul>
-                                    <li>Games: Breath of Fire 6, Capcom Super League, Launched online marketplace in Korea and Japan.</li>
-                                    <li>Introduced scrum and led daily meetings over 10 developers. And managed a work task by Confluence & JIRA.</li>
-                                    <li>Managed a contract, project budget, outsourcing, save 30% project budget.</li>
-                                    <li>Developed game log and evangelized internal team, reduced workload of game planner for analyzing.</li>                                    
-                                </ul>                            
-                            </p>
-                            <h5>Project management of game data analysis system and game operation tool</h5>
-                            <p>
-                                <ul>
-                                    <li>Games : Dragon’s Dogma, Monster Hunter Explore</li>
-                                    <li>Proposed the system improvement of data analysis system and operation tool to Capcom HQ. Support for technical issue and game data analysis report.</li>                                    
-                                </ul>
-                            </p>                                                
-                        </div>
-
-                        <h3><strong>Computer Architechs International Corporation</strong></br>Application Programmer (Dec 2013 - Jun 2015) Gardena, CA</h3>
-                        <div class="margin-b-60">
-                            <h5>Designed and Developed Mobile App and web while working closely with client to modify function and features.</h5>
-                            <p>
-                                <ul>
-                                    <li>AAOS: Code-X 2014/2015 : Add and modify new function and features of Orthopedics Code application. (Adobe Air, Dojo, Sqlite)</li>
-                                    <li>AAOS: Xlite mobile App 2014/2015 : Add and modify new function and features of Orthopedics Code application. (iOS, Android)</li>
-                                    <li>AAOS: Physical Exam App for Elbow, Spine, Pediatrics, Injection : Development of Physical Exam App. (iOS, Android)</li>
-                                    <li>Bridgestone: MyFirestone/Tires Plus: Add and modify new function and features (iOS, Android)</li>
-                                    <li>innovate!SoCal: Development of Conference/Event App for innovate!SoCal (iOS, Android)</li>
-                                </ul>
-                            </p>
-                        </div>
-
-                        <h3><strong>Nintendo Korea</strong></br>Programmer &amp; Licensing Manager (Feb 2007 - Dec 2013) Seoul, Korea</h3>
-                        <div class="margin-b-60">
-                            <h5>Technical Support to game developer</h5>
-                            <p>
-                                <ul>
-                                    <li>Support to subcontracting companies for Nintendo game localization and game development, game guideline check</li>
-                                    <li>Platform : NintendoDS, NintendoDSi, Nintendo3DS, Wii, WiiU</li>
-                                    <li>Gave technical advice on how to make a game of localization issues.</li>
-                                    <li>Gave technical advice and sample code to game developer.</li>
-                                    <li>Support Nintendo guideline check for every games.</li>
-                                    <li>Managed and released information of Nintendo SDK and middleware.</li>
-                                </ul>
-                            </p>
-                            <h5>Establishment and operation of computer system in the company</h5>
-                            <p>
-                                <ul>
-                                    <li>Development of Nintendo WiFi Connection log server (Perl, Mysql)</li>
-                                    <li>Assembled and distributed of wireless router for Nintendo WiFi Connection to market. </li>
-                                    <li>Development of Nintendo SDK distribution webpage. (PHP, Perl, Mysql)</li>
-                                    <li>Development of Secured FTP Server for manage game ROM data (PHP, Perl, Mysql)</li>
-                                </ul>
-                            </p>
-                            <h5>Licensing with subcontracting companies for business participation</h5>
-                            <p>
-                                <ul>
-                                    <li>Provided merchandising Service, product education and demonstration, display maintenance support on market.</li>
-                                    <li>Gave a presentation of product to distribution dealer for sale.</li>
-                                    <li>Management of character license and Game product order process.</li>                                    
-                                </ul>
-                            </p>
-                        </div>
-
-                        <h3><strong>Justek</strong></br>Programmer &amp; Assistant Manager (Mar 2006 - Jan 2007) Seoul, Korea</h3>
-                        <div class="margin-b-60">
-                            <h5>Developed linear motor control program on gantry system</h5>
-                            <p>
-                                <ul>
-                                    <li>Development of USB communication program between DSP board to PC. (C)</li>
-                                    <li>Made a DSP Sample board and modified FPGA program.</li>
-                                    <li>Development MFC Client application library. (MFC)</li>
-                                    <li>Development of motion script for test. (PMAC)</li>                                    
-                                </ul>
-                            </p>
-                            <h5>Developed auto focusing technology of CCD camera</h5>
-                            <p>
-                                <ul>
-                                    <li>Movement Control of Z-axis using contrast value of CCD camera. (MFC, Matlab)</li>
-                                </ul>
-                            </p>
-                            <h5>Developed motor specifications selection program for sales support </h5>
-                            <p>
-                                <ul>
-                                    <li>Developed motor sales web page for custom order production. (PHP, Mysql)</li>                            
-                                </ul>
-                            </p>
-                        </div>
-
-                        <h3><strong>ASEA Information System</strong></br>Programmer (Mar 2004 - Mar 2006) Tokyo, Japan</h3>
-                        <div class="margin-b-60">
-                            <h5>Developed JCB card issue program and client payment limit module</h5>
-                            <p>
-                                <ul>
-                                    <li>Development of client payment limit module of cash service and loan in JCB Card issue system. (VC++, Oracle, RMI, XML, JAVA)</li>                                    
-                                </ul>
-                            </p>
-                            <h5>Developed insurance client management system module</h5>
-                            <p>
-                                <ul>
-                                    <li>Development of new customer registration module. (VC++, Oracle, RMI, XML, JAVA)</li>
-                                </ul>
-                            </p>
-                            <h5>Developed city operation system of Takasaki, Japan</h5>
-                            <p>
-                                <ul>
-                                    <li>Development of ERP system for City of Takasaki. (PHP, VB, C, Oracle)</li>                            
-                                </ul>
-                            </p>
-                        </div>
-
-                        <h3><strong>CDS Information system</strong></br>Web Programmer (Mar 2000 - Sep 2000) Chuncheon, Korea</h3>
-                        <div class="margin-b-60">
-                            <h5>Program staff, Worked as a web and flash programmer</h5>
-                            <p>
-                                <ul>
-                                    <li>Developed web-site and flash game for education (PHP, Mysql, Flash 4.0)</li>                                    
-                                </ul>
-                            </p>                            
-                        </div>
-
-                        <h3><strong>Republic of Korean Army</strong></br>Sergeant (Jul 1995 - Sep 1997) Seoul, Korea</h3>
-                        <div class="margin-b-60">
-                            <h5>Assisted the Medical Officer in the Neurosurgery department.</h5>                            
-                        </div>
-                        <!-- end Resume -->
-                    </div>
+        <section class="home" id="home">
+            <div class="max-width">
+                <video src="images/Coding sequences.mp4" muted loop autoplay></video>
+                <div class="overlay"></div>
+                <p class="description"></p>                
+                <div class="home-content">
+                    <div class="text-1">Hello, my name is</div>
+                    <div class="text-2"><span>Seunghyun</span> Lee</div>
+                    <div class="text-3">And I'm a <span class="typing"></span></div>
+                    <!-- <a href="#contact">Contact me</a>                     -->
                 </div>
-                <!--// end row -->
-            </div>
-        </div>
-        <!-- End Work -->
-            
-        <!-- Contact -->
-        <div id="contact">
-            <div class="bg-color-sky-light">
-                <div class="container content-lg">
-                    <div class="row">
-                        <div class="col-sm-3 sm-margin-b-30">
-                            <div class="text-right sm-text-left">
-                                <h2 class="margin-b-0">Contacts</h2>
-                                <p>Hire me.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-8 col-sm-offset-1">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6 md-margin-b-30">
-                                    <h5>Location</h5>
-                                    <a href="https://www.google.com/maps/place/%EA%B2%BD%EA%B8%B0%EB%8F%84+%EC%88%98%EC%9B%90%EC%8B%9C/@37.2787794,126.95581,12z/data=!3m1!4b1!4m5!3m4!1s0x357b430a20764611:0xf1373002ee5db4c9!8m2!3d37.2635727!4d127.0286009" target="_blank">Suwon, Korea</a>
-                                </div>
-                                <div class="col-md-3 col-xs-6 md-margin-b-30">
-                                    <h5>Phone</h5>
-                                    <a href="tel:821043404667">+82 10 4340 4667</a>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <h5>Email</h5>
-                                    <a href="mailto:seunghyunleekr@gmail.com">seunghyunleekr@gmail.com</a>
-                                </div>
-                                <!--
-                                <div class="col-md-3 col-xs-6">
-                                    <h5>LinkedIn</h5>
-                                    <a href="https://www.linkedin.com/in/leeseunghyun/">https://www.linkedin.com/in/leeseunghyun/</a>
-                                </div>
-                                -->
-                            </div>
-                        </div>
-                    </div>
-                    <!--// end row -->
-                </div>
-            </div>
-        </div>
-
-        <!-- End Contact -->
-        <!--========== END PAGE LAYOUT ==========-->
-
-        <!--========== FOOTER ==========-->
-        <!--
-        <footer class="footer">
-            <div class="content container">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <img class="footer-logo" src="img/logo-dark.png" alt="Aircv Logo"> 
-                    </div>                    
-                    <div class="col-xs-6 text-right sm-text-left">
-                        <p class="margin-b-0"><a class="fweight-700" href="http://keenthemes.com/preview/aircv/">Aircv</a> Theme Powered by: <a class="fweight-700" href="http://www.keenthemes.com/">KeenThemes.com</a></p>
-                    </div>                    
+                <div class="text-1">
+                    <ul class="list-inline">                            
+                        <li>                                
+                            <a href="mailto:seunghyunleekr@gmail.com" class="button button-icon" title="mailto: Seunghyun Lee"><span style="font-size: 2em; color: white;"><i class="fa fa-envelope"></i></span></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/seunghyun-lee" class="button button-icon" title="github: Seunghyun Lee" target="_blank"><span style="font-size: 2em; color: white;"><i class="fa fa-github-square"></i></span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/leeseunghyun" class="button button-icon" title="linkedin: Seunghyun Lee" target="_blank"><span style="font-size: 2em; color: white;"><i class="fa fa-linkedin-square"></i></span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/behappyfromit" class="button button-icon" title="facebook: Seunghyun Lee" target="_blank"><span style="font-size: 2em; color: white;"><i class="fa fa-facebook-square"></i></span></a>
+                        </li>                           
+                    </ul>
                 </div>                
             </div>
+
+            <div class="scroll-down">
+                <div class="mouse_scroll">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div>
+                        <span class="m_scroll_arrows unu"></span>
+                        <span class="m_scroll_arrows doi"></span>
+                        <span class="m_scroll_arrows trei"></span>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section class="about" id="about">
+            <div class="max-width">
+                <h2 class="title">About me</h2>
+                <div class="about-content">
+                    <div class="about-content">
+                        <div class="coulumn left">
+                            <img src="images/seunghyun2.png" alt="">
+                        </div>
+                        <div class="column right work-popup-trigger">
+                            <div class="text">Hi, I'm Seunghyun <p>and I'm a <span class="typing-2"></span></div>
+                            <p>A freelancer developer based in Seoul, Korea. I have over a decade of work experience as a software engineer, project manager and Japanese translater. also I have abroad work experience in LA, Tokyo, Taipei. so I can speak Korean, Japanese and English. I have serious passion for mobile app and web development.  </p>
+                            <a href="#">Download CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- experience section start -->
+        <section class="experience" id="experience">
+            <div class="max-width">
+                <h2 class="title">Areas of Expertise</h2>
+                <div class="serv-content">
+                    <div class="card">
+                        <div class="box">
+                            <i class="fas fa-code"></i>
+                            <div class="text">Developer</div>
+                            <p>
+                                Mobile App <br/>                            
+                                Web <br/>
+                                Nintendo SDK                                 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="fas fa-chart-line"></i>
+                            <div class="text">Project Manger</div>
+                            <p>
+                                Mobile games<br/>                                                                                            
+                                Game publishing<br/>
+                                Game data analysis 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="fas  fa-language"></i>
+                            <div class="text">Languages</div>
+                            <p>
+                                Korean: Native Speake<br/>                            
+                                Japanese: Professional <br/>
+                                English: Intermediate 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills section start -->
+        <section class="skills" id="skills">
+            <div class="max-width">
+                <h2 class="title">My skills</h2>
+                <div class="skills-content">
+                    <div class="column left">
+                        <!-- <div class="text">My creative skills & experiences.</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
+                        <a href="#">Read more</a> -->
+                        <h5>Areas of Expertise : </h5>
+                        <p>Mobile game project management, agile development, market analysis (product/market fit), wireframing/prototypes, full-stack web development.</p>
+                        <h5>Programmer : </h5>
+                        <p>Master degree in Computer Science. Software Engineer at Nintendo Korea, CAI Corp, Justek, and Asea information system. </p>
+                        <h5>Product Manager :</h5>
+                        <p>Recently he worked at Capcom Korea as a Product Manager. </p>
+                        <h5>Languages : </h5>                            
+                        <p>Korean: Native Speaker<br/>
+                        Japanese: Full professional proficiency<br/>
+                        English: Professional working proficiency<br/></p>
+                        <h5>Education : </h5>                            
+                        <p>Master degree in Computer and Communications Engineering, KANGWON National University, 2004<br/>
+                        Bachelor degree in Dairy Science, KANGWON National University, 2001 </p>
+                    </div>
+                    
+                    <div class="column right">
+                        <div class="bars">
+                            <div class="info">
+                                <span>Android : JAVA, Kotlin</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="line html"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>iOS : Objective C, Swift</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="line css"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>JavaScript : React Native, Vue</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="line js"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>NodeJS</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="line mysql"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>Python</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="line php"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>PHP</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="line php"></div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- work section start -->
+        <section class="work" id="work">
+            <div class="max-width">
+                <h2 class="title">My work</h2>
+                <div class="work-content">
+                    <div class="images">
+                        <div class="imageFlex1">
+                            <div class="workimg work-popup-trigger">
+                                <div class="work-overlay">
+                                    <img src="workimg/cslo-title.jpeg">
+                                </div>
+                                <div class="work-popup-overlay">
+                                    <div class="work-popup-content">
+                                        <a href="javascript:void(0);" class="work-popup-close">Hide</a>
+                                        <div class="margin-b-30">
+                                            <h3 class="margin-b-5">Art Of Coding</h3>
+                                            <span>Clean &amp; Minimalistic Design</span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
+                                                <div class="margin-t-10 sm-margin-t-0">
+                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                                                    <ul class="list-inline work-popup-tag">
+                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="http://keenthemes.com/">Design,</a></li>
+                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="http://keenthemes.com/">Coding,</a></li>
+                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="http://keenthemes.com/">Portfolio</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="margin-t-10 sm-margin-t-0">
+                                                    <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
+                                                    <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
+                                                    <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
+                                                    <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="workimg work-popup-trigger">
+                                <div class="work-overlay">
+                                    <img src="workimg/cslo-main.jpeg">
+                                </div>
+                                <div class="work-popup-overlay">
+                                    <div class="work-popup-content">
+                                        <a href="javascript:void(0);" class="work-popup-close">Hide</a>
+                                        <div class="margin-b-30">
+                                            <h3 class="margin-b-5">Test</h3>
+                                            <span>Clean &amp; Minimalistic Design</span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
+                                                <div class="margin-t-10 sm-margin-t-0">
+                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                                                    <ul class="list-inline work-popup-tag">
+                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="http://keenthemes.com/">Test1,</a></li>
+                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="http://keenthemes.com/">Test2,</a></li>
+                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="http://keenthemes.com/">Test3</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="margin-t-10 sm-margin-t-0">
+                                                    <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
+                                                    <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
+                                                    <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
+                                                    <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                          <img src="workimg/bof6-title.jpeg">
+                          <img src="workimg/bof6-main.jpeg">
+                        </div>
+                      </div>
+                      <div class="images">
+                        <div class="imageFlex2">
+                          <img src="workimg/unite-title.JPG">
+                          <img src="workimg/unite-main.JPG">
+                          <img src="workimg/unite-sub.JPG">
+                        </div>
+                      </div>
+                      <div class="images">
+                        <div class="imageFlex3">
+                          <img src="workimg/capcom-team.jpg">
+                          <img src="images/blend-image-1.jpg">
+                          <img src="images/blend-image-2.jpg">
+                        </div>
+                      </div>
+                </div>
+                <!-- <div class="carousel owl-carousel">
+                    <div class="card work-overlay">                        
+                        <div class="box">
+                            <img src="images/seunghyun.png" alt="">
+                            <div class="text">Someone name</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>                        
+                    </div>                    
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/seunghyun.png" alt="">
+                            <div class="text">Someone name</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/seunghyun.png" alt="">
+                            <div class="text">Someone name</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/seunghyun.png" alt="">
+                            <div class="text">Someone name</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/seunghyun.png" alt="">
+                            <div class="text">Someone name</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                </div> -->
+
+                
+
+            </div>
+        </section>
+
+        <!-- contact section start -->
+        <section class="contact" id="contact">
+            <div class="max-width">
+                <h2 class="title">Contact me</h2>
+                <div class="contact-content">
+                    <div class="column left">
+                        <div class="text">Get in Touch</div>
+                        <p>Have a question or want to work together?</p>
+                        <div class="icons">
+                            <div class="row">
+                                <i class="fas fa-user"></i>
+                                <div class="info">
+                                    <div class="head">Name</div>
+                                    <div class="sub-title">Seunghyun Lee</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="info">
+                                    <div class="head">Address</div>
+                                    <div class="sub-title">Suwon, S.Korea</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info">
+                                    <div class="head">Email</div>
+                                    <div class="sub-title">seunghyunleekr@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <div class="text">Message me</div>
+                        <form action="https://formsubmit.co/seunghyunleekr@gmail.com" method="POST">
+                            <div class="fields">
+                                <div class="field name">
+                                    <input type="text" placeholder="Name" required>
+                                </div>
+                                <div class="field email">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <input type="text" placeholder="Subject" required>
+                            </div>
+                            <div class="field textarea">
+                                <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            </div>
+                            <input type="hidden" name="_captcha" value="false">
+                            <div class="button">
+                                <button type="submit">Send message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <!-- <a href="https://github.com/seunghyun-lee" target="_blank"><i class="fa fa-github-square"></i></a> -->
+            <!-- <div class="max-width">
+                <ul class="list-inline">                            
+                    <li>                                
+                        <a href="mailto:seunghyunleekr@gmail.com"><i class="fa fa-envelope"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/seunghyun-lee" target="_blank"><i class="fa fa-github-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/leeseunghyun" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/behappyfromit" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                    </li>                           
+                </ul>
+            </div> -->
+            
+            <span>Hello! I'm Seunghyun</span>
         </footer>
-        -->
-        <!--========== END FOOTER ==========-->
 
-        <!-- Back To Top -->
-        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
-
-        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-        <!-- CORE PLUGINS -->
-        <script src="vendor/jquery.min.js" type="text/javascript"></script>
-        <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
-        <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-
-        <!-- PAGE LEVEL PLUGINS -->
-        <script src="vendor/jquery.easing.js" type="text/javascript"></script>
-        <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
-        <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
-        <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
-        <script src="vendor/jquery.parallax.min.js" type="text/javascript"></script>
-        <script src="vendor/jquery.appear.js" type="text/javascript"></script>
-        <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
-        <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-
-        <!-- PAGE LEVEL SCRIPTS -->
-        <script src="js/layout.min.js" type="text/javascript"></script>
-        <script src="js/components/progress-bar.min.js" type="text/javascript"></script>
-        <script src="js/components/masonry.min.js" type="text/javascript"></script>
-        <script src="js/components/wow.min.js" type="text/javascript"></script>
-
+        <script src="default.js"></script>
     </body>
-    <!-- END BODY -->
 </html>
