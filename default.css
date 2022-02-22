@@ -372,9 +372,6 @@ section .title::after{
 }
 
 /* skills section styling */
-
-/* .skills  */
-
 .skills .title::after{
     content: "What I know";
 }
@@ -594,52 +591,37 @@ section .title::after{
     -moz-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0);
 }
-.work .work-popup-content-divider {
-    border-right: 1px solid #cdcecf;
-}
 .work .work-popup-close {
-    float: right;
-    font-size: 13px;
-    font-weight: 700;
-    color: #c5c6cb;
-    transition-duration: 300ms;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  /* display: inline-block; */
+  float: right;
+  background: orange;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid orange;
+  transition: all 0.3s ease;  
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 .work .work-popup-close:hover {
-    color: #aaacb3;
-    transition-duration: 300ms;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  color: orange;
+  background: none;
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
-
 @media (max-width: 768px) {
     .work .work-popup-content {
         width: 95%;
     }
     .work .work-popup-content-divider {
         border-right: none;
-        border-bottom: 1px solid #cdcecf;
     }
 }
-  
-.work .work-popup-close {
-    float: right;
-    font-size: 13px;
-    font-weight: 700;
-    color: #c5c6cb;
-    transition-duration: 300ms;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-  
-.work .work-popup-close:hover {
-    color: #aaacb3;
-    transition-duration: 300ms;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-  
 
 /* Tag */
 .work .work-popup-tag {
