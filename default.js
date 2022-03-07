@@ -67,7 +67,9 @@ $(document).ready(function() {
                 nav: false
             }
         }
-    });
+    });    
+
+    Layout.init();
 });
 
 var Layout = function () {
@@ -79,6 +81,7 @@ var Layout = function () {
         trigger.on('click', function() {
             $(this).find('.work-popup-overlay').removeClass('work-popup-overlay-show');
             $(this).find('.work-popup-overlay').addClass('work-popup-overlay-show');
+            
         });
 
         close.on('click', function(e) {
@@ -94,6 +97,74 @@ var Layout = function () {
     };
 }();
 
-$(document).ready(function() {
-    Layout.init();
-});
+// var slideIndex = 0;
+// // showSlides();
+// showSlides("bof6");
+// showSlides("unite2013");
+
+// function showSlides(slideTag) {
+//     var i;
+//     var slides;
+//     //  = document.getElementsByClassName("mySlides");
+    
+//     switch (slideTag) {
+//         case "bof6":
+//             slides = document.getElementsByClassName("bof6");
+//             break;
+//         case "unite2013":
+//             slides = document.getElementsByClassName("mySlides");
+//             break;
+//         default:
+//             // slides = document.getElementsByClassName("mySlides");
+//             break;
+//     }    
+    
+//     for (i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none";
+//     }
+//     slideIndex++;
+//     if (slideIndex > slides.length) { slideIndex = 1 }
+//     slides[slideIndex - 1].style.display = "block";
+//     // setTimeout(showSlides, 2000); // Change image every 2 seconds
+//     setInterval(showSlides(slideTag), 3000);
+// }
+
+var slideIndex = 1;
+showSlides("bof6",slideIndex);
+showSlides("unite2013",slideIndex);
+
+function plusSlides(slideTag, n) {
+    showSlides(slideTag, slideIndex += n);
+}
+
+function currentSlide(slideTag, n) {
+    showSlides(slideTag, slideIndex = n);
+}
+
+function showSlides(slideTag, n) {
+    var i;
+    // var slides = document.getElementsByClassName("mySlides");
+    var slides;
+    switch (slideTag) {
+        case "bof6":
+            slides = document.getElementsByClassName("bof6");
+            break;
+        case "unite2013":
+            slides = document.getElementsByClassName("mySlides");
+            break;
+        default:
+            // slides = document.getElementsByClassName("mySlides");
+            break;
+    }    
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
