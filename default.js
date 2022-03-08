@@ -130,6 +130,7 @@ var Layout = function () {
 // }
 
 var slideIndex = 1;
+showSlides("cslo",slideIndex);
 showSlides("bof6",slideIndex);
 showSlides("unite2013",slideIndex);
 
@@ -146,11 +147,14 @@ function showSlides(slideTag, n) {
     // var slides = document.getElementsByClassName("mySlides");
     var slides;
     switch (slideTag) {
+        case "cslo":
+            slides = document.getElementsByClassName("cslo");
+            break;
         case "bof6":
             slides = document.getElementsByClassName("bof6");
             break;
         case "unite2013":
-            slides = document.getElementsByClassName("mySlides");
+            slides = document.getElementsByClassName("unite2013");
             break;
         default:
             // slides = document.getElementsByClassName("mySlides");

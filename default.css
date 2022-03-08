@@ -384,7 +384,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 .skills .skills-content .left p{
-    text-align: justify;
+    text-align: -webkit-left;
 }
 .skills .skills-content .left a{
     display: inline-block;
@@ -740,10 +740,14 @@ section .title::after{
     margin: 0;
 }
 .work .work-popup-tag-item {
-    padding: 0 2px;
+  padding: 0 2px;
 }
 .work .work-popup-tag-link {
-    font-size: 13px;
+    font-size: 15px;
+    color: orange;
+}
+.work .work-popup-tag-link:hover {
+  color: lightskyblue;
 }
 
 .owl-dots{
