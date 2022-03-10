@@ -133,6 +133,7 @@ var slideIndex = 1;
 showSlides("cslo",slideIndex);
 showSlides("bof6",slideIndex);
 showSlides("unite2013",slideIndex);
+showSlides("injection",slideIndex);
 
 function plusSlides(slideTag, n) {
     showSlides(slideTag, slideIndex += n);
@@ -155,6 +156,9 @@ function showSlides(slideTag, n) {
             break;
         case "unite2013":
             slides = document.getElementsByClassName("unite2013");
+            break;
+        case "injection":
+            slides = document.getElementsByClassName("injection");
             break;
         default:
             // slides = document.getElementsByClassName("mySlides");

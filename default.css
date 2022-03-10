@@ -597,6 +597,15 @@ section .title::after{
     -moz-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0);
 }
+.work .work-popup-icon {
+  float: left;
+  width: 60px;
+  height: 60px;  
+  margin-right: 10px;
+  border-radius: 30%;
+  overflow: hidden;
+}
+
 .work .work-popup-close {
   /* display: inline-block; */
   float: right;
@@ -604,9 +613,9 @@ section .title::after{
   color: #fff;
   font-size: 13px;
   font-weight: 700;
-  padding: 10px 30px;
-  margin-top: 20px;
-  border-radius: 6px;
+  padding: 4px 10px;
+  /* margin-top: 20px; */
+  border-radius: 3px;
   border: 2px solid orange;
   transition: all 0.3s ease;  
   transition-duration: 300ms;
@@ -633,7 +642,7 @@ section .title::after{
   content: ' ';
   height: 40px;
   width: 2px;
-  background-color: #000;
+  background-color: #FFF;
 }
 .work .close:before {
   transform: rotate(45deg);
