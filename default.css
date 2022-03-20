@@ -429,11 +429,17 @@ section .title::after{
     top: 0;
     background: orange;
 }
-.skills-content .right .android::before{
+.skills-content .right .androidjava::before{
     width: 90%;
 }
-.skills-content .right .ios::before{
+.skills-content .right .androidkotlin::before{
+  width: 80%;
+}
+.skills-content .right .iosobjc::before{
     width: 90%;
+}
+.skills-content .right .iosswitf::before{
+  width: 70%;
 }
 .skills-content .right .js::before{
     width: 80%;
@@ -445,10 +451,10 @@ section .title::after{
     width: 70%;
 }
 .skills-content .right .oldweb::before{
-  width: 70%;
+  width: 60%;
 }
 .skills-content .right .etc::before{
-  width: 50%;
+  width: 40%;
 }
 
 /* work section styling */
